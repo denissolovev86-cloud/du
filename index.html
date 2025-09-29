@@ -15,6 +15,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            /* Добавляем фоновую текстуру */
+            background-image: 
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><circle cx="30" cy="30" r="3" fill="%23ad927d" opacity="0.15"/><path d="M100 150a10 10 0 1 1-20 0 10 10 0 1 1 20 0" fill="%23ad927d" opacity="0.1"/><path d="M150 200a5 5 0 1 1-10 0 5 5 0 1 1 10 0" fill="%23ad927d" opacity="0.1"/><circle cx="250" cy="100" r="4" fill="%23ad927d" opacity="0.12"/><path d="M300 300a8 8 0 1 1-16 0 8 8 0 1 1 16 0" fill="%23ad927d" opacity="0.1"/><circle cx="350" cy="50" r="2" fill="%23ad927d" opacity="0.1"/><path d="M50 250a6 6 0 1 1-12 0 6 6 0 1 1 12 0" fill="%23ad927d" opacity="0.1"/><circle cx="200" cy="350" r="3" fill="%23ad927d" opacity="0.15"/></svg>'),
+                linear-gradient(135deg, #f1f0f5 0%, #f8f7fa 100%);
         }
         .container {
             max-width: 500px;
@@ -22,13 +26,14 @@
             border-radius: 20px;
             padding: 25px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            /* Добавляем прозрачность контейнера для лучшего контраста */
+            background-color: rgba(255,255,255,0.95);
         }
         .logo {
             max-width: 90%;
             height: auto;
             margin-bottom: 20px;
         }
-        /* Новые стили для звезд */
         .stars {
             font-size: 24px;
             color: #ad927d;
@@ -64,7 +69,6 @@
             margin-top: 25px;
         }
 
-        /* Адаптация под мобильные */
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -80,15 +84,11 @@
 </head>
 <body>
     <div class="container">
-        <!-- Логотип -->
-        <img src="https://raw.githubusercontent.com/denissolovev86-cloud/du/main/logo-dom.png" class="logo" alt="Логотип Малахитовая шкатулка">
-        
-        <!-- Звезды в новых цветах -->
-        <div class="stars">★★★★★</div>
-        
-        <h1>Поделитесь своими эмоциями 💎</h1>
-        <a href="https://yandex.ru/maps/org/dom_yuvelira/1033480260/reviews/?add-review=true&ll=45.017120%2C53.196090&z=16" class="btn">Оценить в Яндекс.Картах</a>
-        <a href="https://2gis.ru/penza/geo/5911502791956983" class="btn">Оценить в 2GIS</a>
+        <img src="https://raw.githubusercontent.com/denissolovev86-cloud/malahitovaya-shkatulka/main/1758880610.png" class="logo" alt="Логотип Малахитовая шкатулка">
+        <div class="stars">★★★★☆</div>
+        <h1>Пожалуйста, оставьте отзыв о нашей работе!</h1>
+        <a href="https://yandex.ru/maps/org/malakhitovaya_shkatulka/1343108527/reviews/?add-review=true&display-text=Малахитовая%20шкатулка&indoorLevel=1&ll=45.024145%2C53.197606&mode=search&sctx=ZAAAAAgBEAAaKAoSCbdfPlkxgkZAEVUWhV0UmUpAEhIJDJQUWABTtj8RXJIDdjV5oj8iBgABAgMEBSgKOABA1Z8NSAFqAnR1nQHNzMw9oAEAqAEAvQEUhYtewgELr%2Bu4gAXq08yNuQWCAhsoKGNoYWluX2lkOigxMjQyNzI2NTI3NjUpKSmKAgCSAgCaAgxkZXNrdG9wLW1hcHOqAl0xMjQyNzI2NTI3NjUsNjAwMjU2OCwzNTA0NDgwODYzLDgyODU3NjU1NTcsNjAwMzQzOSw2MDAyMjkzLDE2NzA5MTI3OTk4Miw1OTYzOTkzMDU2LDU5NjM5ODY2MTKwAgE%3D&sll=45.024145%2C53.197606&sspn=0.008854%2C0.003663&tab=reviews&text=%7B%22text%22%3A%22Малахитовая%20шкатулка%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%22124272652765%22%5D%7D%5D%7D&z=17.3" class="btn">Оценить в Яндекс.Картах</a>
+        <a href="https://2gis.ru/penza/search/%D0%BC%D0%B0%D0%BB%D0%B0%D1%85%D0%B8%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%88%D0%BA%D0%B0%D1%82%D1%83%D0%BB%D0%BA%D0%B0/firm/5911502791901653/45.020315%2C53.198249/tab/reviews/addreview?m=45.012602%2C53.201435%2F10.72" class="btn">Оценить в 2GIS</a>
         <div class="footer">Спасибо за ваше мнение!</div>
     </div>
 </body>
